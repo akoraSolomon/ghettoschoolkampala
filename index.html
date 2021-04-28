@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://kit.fontawesome.com/cadb8f2f8f.js" crossorigin="anonymous"></script> 
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!--Navbar-->
+      <nav class ='navbar navbar-expand-lg navbar-dark navbar-custom fixed-top'
+       id='mainNav'>
+       <a class='navbar-brand'><span class ='logo'>
+           Ghetto School
+       </span></a>
+      <button class='navbar-toggler navbar-toggler-right' type='button'
+       data-toggle='collapse' data-target='#navbarResponsive'
+        aria-controls="navbarResponsive" aria-expanded="false"
+         aria-label="Toggle navigation">Menu
+         <i class='fas fa-bars ml-1'></i>
+    </button>
+    <div class='collapse navbar-collapse' id='navbarResponsive'>
+        <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#causes">Causes</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#about">About</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#team">team</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#contact ">Contact</a>
+           </li>
+           <li class="nav-item">
+               <button id="donations" class="btn btn-danger btn-lg text-uppercase" >DONATE</button>
+          </li>
+          </ul>
+    </div>
+
+      </nav>
+      <!--end of nav-->
+      <!--gheto -->
+      <header class ="hero">
+        <div class ="container">
+          <div class ="hero-heading text-uppercase">
+            GHETTO SCHOOL
+          </div>
+          <a class="btn btn-danger btn-lg text-uppercase " href="#causes">
+            know More
+          </a>
+        </div>
+      </header>
+      <!--End of Hero Image-->
+      <!--Major causes-->
+      <section class="mt-5 page-section" id="causes">
+        <div class='container'>
+           <div class="text-center"> 
+              <h2 class ="section-heading text-uppercase font-weight-bold">
+             Major Causes
+             </h2>
+               <h3 class="section-subheading text-muted">
+              Transforning the lives of the Ghetto youth.So that they can also have a better living.
+             </h3>
+          </div>
+          <!--end of title-->
+      <!--single item-->
+       <div class='row text-center'>
+        <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-danger"></i>
+              <i class="fas fa-hand-holding-usd fa-stack-1x fa-inverse"></i>
+            </span> 
+            <h4 class="my-3"> Give Donations</h4>
+            <p class="text-muted">You can also be part of the calling by supporting the young people 
+                who live in the slums Uganda (the Ghetto people) through donating to them.The donations you
+                give we use it to support ghetto peoples talents which in the long run improves their standards of living.
+            </p>
+          </div> 
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-warning"></i>
+              <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
+            </span> 
+            <h4 class="my-3"> Give Inspirations</h4>
+            <p class="text-muted">The Ghetto youths have many inspirations from people /artists like Bobi wine.
+                meaning they can also make it life.You can also be part of the cause as we improve the talent and 
+                welbeing of the youths who live in the Ghetto. By supporting Ghetto schools you Have impired millions of youths.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-success"></i>
+              <i class="fas fa-tshirt fa-stack-1x fa-inverse"></i>
+            </span> 
+            <h4 class="my-3"> Become Volunteer  </h4>
+            <p class="text-muted">You can become a volunteer by contacting us through our social media platforms
+                or contact us from our email..and you will know the steps of how you can become part of the ghetto schools community.
+                you can also subscribe to us by registering your email adress on the site.
+            
+
+            </p>
+          </div>
+       </div>
+      <!--end of single item-->
+     </div>
+    </section>
+      <!--end of major cause-->
+      <!--About section-->
+      <section class='about-section mt-5' id='about'>
+          <div class='container'>
+              <div class='text-center'>
+                  <h2 class='section-subheading text-uppercase'>About</h2>
+                  <h3 class='section-subheading text-muted'>
+                      Ghetto school is a charity organisation which which supports young people through their talents so that they can have a better living.
+                  </h3>
+              </div>
+              <!--end title-->
+              <section id='about' class='about'>
+                  <div class='container-fluid'>
+                      <div class='row'>
+                          <div class='col-x1-5 col-lg-6 d-flex justify-content-center
+                          align-items-stretch'>
+                          <img src='/images/about.JPG' class='img-fluid' alt=''>
+
+                          </div>
+                     <div class='col-x1-7 col-lg-6 icon-boxes d-flex flex-column
+                      align-items-stretch justify-content-center py-5 px-lg-5 '>
+                      <h3>History</h3>
+                      <p>Ghetto school  was founded in 2015 by <b>Dream Bouy</b>, A ghetto youth artist who has thrived to come 
+                          on the music scene and the inspirations come from there. He has hits like<b> Abakyala</b> and <b>samanya</b> where he featured <b>Nina Roz.</b>
+                      </p>
+                      <div class='icon-box'>
+                          <div class ='icon'>
+                              <i class='fas fa-file-invoice-dollar'></i>
+                          </div>
+                    
+                          <h4 class='title'>Our Mission</h4>
+                          <p class='detail'>To transform the lives of the ghetto youths through supporting their musical talents.</p>
+                      </div>
+                      <div class='icon-box'>
+                        <div class ='icon'>
+                            <i class='fas fa-gifts'></i>
+                        </div>
+                  
+                        <h4 class='title'>Objective</h4>
+                        <p class='detail'>To make sure every ghetto youth has a chance to education and has support in their musical talents. </p>
+                    </div>
+                    <div class='icon-box'>
+                        <div class ='icon'>
+                            <i class='fas fa-mug-hot'></i>
+                        </div>
+                  
+                        <h4 class='title'>Support</h4>
+                        <p class='detail'>You can support our objectives and mission by donating to so that we can have a milestone reached.</p>
+                    </div>
+                
+                       </div>
+                      </div>
+
+                  </div>
+
+              </section>
+          </div>
+
+      </section>
+      <!--end of about section-->
+
+    <!--Team-->
+    <section class='team-section mt-5' id='team'>
+         <div class='container'>
+             <div class='text-center'>
+                 <h2 class='section-heading text-uppercase'>
+                     Our Amazing Team
+                 </h2>
+               <h3 class='section-subheading text-muted'>
+                   we look forward to help or reach out tp each and every one in the ghetto.
+               </h3>
+             </div>
+             <!--end of title-->
+             <div class='row'>
+                 <div class='col-lg-4'>
+                     <div class='team-member bound'>
+                         <div class='img-bound'>
+                             <img src='/images/boy.jpg' alt=''>
+
+                         </div>
+                         <div class='content'>
+                             <h4 class='text-dark'>Drean Bouy</h4>
+                             <p class='text=muted'>The founder and CEO of the Ghetto schools.He was born on 1996 and he lives in kamwokya.
+                             </p>
+                         </div>
+
+                     </div>
+
+                 </div>
+               <!---->
+               <div class='col-lg-4'>
+                <div class='team-member bound'>
+                    <div class='img-bound'>
+                        <img src='/images/dax.jpg'  alt=''>
+
+                    </div>
+                    <div class='content'>
+                        <h4 class='text-dark'>Solomon Ssekatawa</h4>
+                        <p class='text=muted'>Co founder of the ghetto schools .Born in 1995 and he is one of the benficiaries of this project.
+                            He lives in kisasi
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+          <!---->
+          <div class='col-lg-4'>
+            <div class='team-member bound'>
+                <div class='img-bound'>
+                    <img src='/images/dr.jpg' alt=''>
+
+                </div>
+                <div class='content'>
+                    <h4 class='text-dark'>Dax vibes</h4>
+                    <p class='text=muted'>The General secretary of the foundation. Born in 1993 also on of the beneficiaries of the project.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+      <!---->
+             </div>
+
+         </div>
+
+    </section>
+    <!--end of team-->
+<!--signup-->
+<section class='signup-section mt-5' id='signup'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-10 col-lg-8 mx-auto text-center'>
+                <h2 class='text-dark mb-5'>
+                    Subscribe for updates
+                </h2>
+                <form class='form-inline d-flex'action="">
+                    <input class='form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0'
+                    id='input-Email' type='email' placeholder='Enter email address..'>
+                    <button class='btn btn-danger mx-auto' type='submit'>Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<!--end of sign up-->
+<!--conatact section-->
+<section id='contact' class='contact mt-5'>
+    <div class='conatiner'>
+        <div class='text-center'>
+            <h2 class='section-heading text-uppercase'>Contact</h2>
+            <h3 class='section-subheading text-muted'>GHETTO SCHOOL contact information
+                
+            </h3>
+        </div>
+          <div class='row'>
+              <div class='col-lg-6'>
+                  <div class='row'>
+                   <div class='col-lg-6 info'>
+                       <i class='fas fa-map'></i>
+                       <h4>Address</h4>
+                       <p>kanjokya, street<br>Kamwokya, kampala Uganda</p>
+                   </div> 
+                   <div class='col-lg-6 info'>
+                    <i class='fas fa-phone'></i>
+                    <h4>call us</h4>
+                    <p>+256-754-168-960</p>
+                </div> 
+                <div class='col-lg-6 info'>
+                    <i class='fas fa-envelope'></i>
+                    <h4>Email us</h4>
+                    <p>contact @ ghetoschool.com<br>ghettoschool@gmail.com</p>
+                </div> 
+                <div class='col-lg-6 info'>
+                    <i class='fas fa-clock'></i>
+                    <h4>Working Hours</h4>
+                    <p>Mon-Fri 9AM to 5pm<br> Sunday:9AM to 1Pm</p>
+                </div> 
+                  </div>
+              </div>
+
+              <!--Form-->
+              <div class='col-lg-6'>
+                  <form method="POST" action="contact-form-handler.php" >
+                      <div class='form-group'>
+                        <input placeholder='Name' type='text' name='name'
+                        class='form-control'>
+                       </div>
+                       <div class='form-group'>
+                        <input placeholder='Email' type='Email' name='email'
+                        class='form-control'>
+                       </div>
+                       <div class='form-group'>
+                        <input placeholder='Subject' type='text' name='subject'
+                        class='form-control'>
+                       </div>
+                       <div class='form-group'>
+                        <textarea placeholder='Message'  name='message'
+                        class='form-control' rows='5'></textarea> <br>
+                        <div class='text-center'>
+                            <button type='submit' class='btn btn-danger'>
+                                Send message
+                            </button>
+                        </div>
+                       </div>
+                  </form>
+              </div>
+          </div>
+    </div>
+
+</section>
+<!--end of contact section-->
+
+<footer class='mt-5' id='footer'>
+    <div class='container d-md-flex py-4'>
+        <div class='mr-md-auto text-center text-md-left'>
+            <div class='copyright'>
+                &copy; copyright<strong><span>GHETTO SCHOOLS</span></strong>
+                All Rights Reserved
+
+            </div>
+        </div>
+     <div class='social-links text-center text-md-right-pt-3 pt-md-0'>
+         <ul class='social'>
+             <li class='list-item'>
+                 <a class='list-link'href="#">
+                   <i class='fab fa-facebook'></i>  
+                 </a>
+             </li>
+             <li class='list-item'>
+                <a class='list-link'href="#">
+                  <i class='fab fa-whatsapp'></i>  
+                </a>
+            </li>
+            <li class='list-item'>
+                <a class='list-link'href="#">
+                  <i class='fab fa-twitter'></i>  
+                </a>
+            </li>
+            <li class='list-item'>
+                <a class='list-link'href="#">
+                  <i class='fab fa-instagram'></i>  
+                </a>
+            </li>
+
+         </ul>
+     </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/js/donate.js" ></script>
+  </body>
+</html>

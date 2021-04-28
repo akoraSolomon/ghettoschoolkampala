@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Balsamiq Sans", cursive;
+}
+.logo {
+  color: #ffff;
+}
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgba(7, 7, 7, 0.5);
+}
+/* end of nav*/
+.hero {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: black;
+  background-image: url("/images/img1.JPG");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+.hero-heading {
+  font-size: 3.25rem;
+  font-weight: bold;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  color: #ffff;
+}
+/*end of HERO*/
+.page-section h2.section-heading {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.page-section h3.section-subheading {
+  font-size: 1rem;
+  font-weight: light;
+  font-style: italic;
+  margin-bottom: 4rem;
+}
+/*About section*/
+.about {
+  padding: 10px 0 0 0;
+}
+.about .icon-boxes h3 {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+}
+.about .icon-box {
+  margin-top: 40px;
+}
+.about .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #cc1c05;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.about .icon-box .icon i {
+  color: #cc1c05;
+  font-size: 30px;
+}
+.about .icon-box:hover .icon {
+  background: #cc1c05;
+  border-color: #cc1c05;
+}
+.about .icon-box:hover .icon i {
+  color: #fff;
+}
+.about .icon-box .title {
+  margin-left: 85px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.about .icon-box .title a {
+  color: #cc1c05;
+  transition: 0.3s;
+}
+.about .icon-box .title a:hover {
+  color: #fff;
+}
+.about .icon-box .detail {
+  margin-left: 85px;
+  line-height: 24px;
+  font-size: 14px;
+}
+/*----team----*/
+.bound {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.bound .img-bound {
+  background: #000;
+  clip-path: circle(400px at center 100px);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.bound:hover .img-bound {
+  clip-path: circle(80px at center 100px);
+  transition-delay: 0s;
+}
+.bound .img-bound img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bound .content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100;
+  height: 55%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.bound .content .h2 {
+  margin: 0;
+  padding: 0;
+}
+.bound .content h2,
+.bound .content p {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(20px);
+}
+.bound:hover .content p {
+  opacity: 1;
+  margin-bottom: 10px;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+.bound:hover .content p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s;
+}
+
+/*---contact--*/
+.contact .info {
+  padding: 20px 40px;
+  background: #f7e759;
+  color: #000;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.contact .info {
+  font-size: 30px;
+  color: #a31818;
+  margin-bottom: 15px;
+}
+.contact .info h4 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contact .info p {
+  font-size: 15px;
+}
+/*footer*/
+.social {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.social .list-item {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+} /*
+ .social .list-item::after, .social .list-item::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left:0;
+     width: 100%;
+     height:100%
+     background: linear-gradient(45deg, red ,yellow);
+     border-radius: 50%;
+     z-index: -1;
+     filter:blur(10px);
+     opacity: 0;
+     transition: 1s;
+
+ }*/
+.social .list-item::after {
+  filter: blur(20px);
+}
+.social .list-item:hover::before,
+.social .list-item:hover:after {
+  opacity: 1;
+}
+.social .list-item .list-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background: #000;
+  font-size: 28px;
+  border-radius: 50%;
+  transition: 2s;
+}
+.social .list-item .list-link i {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
