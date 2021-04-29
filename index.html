@@ -47,7 +47,7 @@
              <a class="nav-link" href="#contact ">Contact</a>
            </li>
            <li class="nav-item">
-               <button id="donations" class="btn btn-danger btn-lg text-uppercase" >DONATE</button>
+               <a href='donations.html'><button id="donations" class="btn btn-danger btn-lg text-uppercase" >DONATE</button></a>
           </li>
           </ul>
     </div>
@@ -317,10 +317,9 @@
                 <h2 class='text-dark mb-5'>
                     Subscribe for updates
                 </h2>
-                <form class='form-inline d-flex'action="https://formspree.io/f/xpzkqpaa"
+                <form class='form-inline d-flex'action=" "
                 method="POST" >
-                    <input class='form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0'
-                    id='input-Email' type='email' placeholder='Enter email address..'>
+                    <input class='form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0' id='input-Email' type='email' placeholder='Enter email address..'>
                     <button class='btn btn-danger mx-auto' type='submit'>Subscribe</button>
                 </form>
             </div>
@@ -370,14 +369,13 @@
 
               <!--Form-->
               <div class='col-lg-6'>
-                  <form method="POST" action="contact-form-handler.php" >
+                  <form method="POST" action="https://formspree.io/f/xpzkqpaa" >
                       <div class='form-group'>
                         <input placeholder='Name' type='text' name='name'
                         class='form-control'>
                        </div>
                        <div class='form-group'>
-                        <input placeholder='Email' type='Email' name='email'
-                        class='form-control'>
+                        <input placeholder='Email' type='Email' name='_replyto' class='form-control'>
                        </div>
                        <div class='form-group'>
                         <input placeholder='Subject' type='text' name='subject'
